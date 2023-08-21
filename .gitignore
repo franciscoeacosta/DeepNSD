@@ -1,69 +1,17 @@
-# Specific Files #
-###################
-github_rsync.sh
 
-# Data Files #
-###################
-*data_saver/*
-*results/*
-datasets/*
 
-# Checkpoints #
-###################
-.ipynb_checkpoints/
-__pycache__/
-*.ckpt
-*.pyc
-*.pyo
+# Data files
+neural_data/natural_scenes_demo/
+neural_data/._natural_scenes_demo
 
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
-
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-*/.DS_Store
-**/.DS_Store
-.DS_Store
-.DS_Store?
-
+# notebook figures
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+.DS_Store
 
 # C extensions
 *.so
@@ -153,8 +101,12 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# celery beat schedule file
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
 celerybeat-schedule
+celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
@@ -185,3 +137,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# vs code
+neuralgeom/.vscode/*
